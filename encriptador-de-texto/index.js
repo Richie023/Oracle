@@ -27,3 +27,5 @@ function encriptar() {
 
     }
 }
+
+/*minuto* 1/27/17/ */
