@@ -12,20 +12,15 @@ function encriptar() {
         .replace(/u/gi, "ufat");
 
 
-    if (texto.length != 0) {
-        document.getElementById("texto").value = textoCifrado;
-        tituloMensaje.textContent = "Texto encriptado con exito";
-        parrafo.textContent = "";
-        muñeco.src = "./img/encriptado.jpg";
-
-    } else {
-
-        muñeco.src = "./img/muñeco.png";
-        tituloMensaje.textContent = "Ningun mensaje fue ingresado";
-        parrafo.textContent = "Ingresa el texto que deseas encriptar o desencriptar";
-        alert("Debes ingresar algun texto");
-
-    }
-}
-
-/*minuto* 1/27/17/ */
+        if (texto.length != 0) {
+            document.getElementById("texto").value = textoCifrado;
+            tituloMensaje.textContent = "Texto encriptado con éxito";
+            parrafo.textContent = "";
+            muñeco.src = "./img/encriptado.jpg";
+          } else {
+            muñeco.src = "./img/muñeco.png";
+            tituloMensaje.textContent = "Ningún mensaje fue encontrado";
+            parrafo.textContent = "Ingresa el texto que deseas encriptar o desencriptar";
+            swal("Ooops!", "Debes ingresar un texto", "warning");
+          }}
+          
